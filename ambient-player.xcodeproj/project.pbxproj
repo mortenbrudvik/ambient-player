@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		163EC610212FD4670068B143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EC60F212FD4670068B143 /* AppDelegate.swift */; };
 		163EC612212FD4670068B143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EC611212FD4670068B143 /* ViewController.swift */; };
-		163EC615212FD4670068B143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163EC613212FD4670068B143 /* Main.storyboard */; };
 		163EC617212FD46D0068B143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163EC616212FD46D0068B143 /* Assets.xcassets */; };
 		163EC61A212FD46D0068B143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163EC618212FD46D0068B143 /* LaunchScreen.storyboard */; };
+		163EC622212FD5B00068B143 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EC621212FD5B00068B143 /* UIColorExtension.swift */; };
+		61CBD36682C8C20E621AF6D1 /* Pods_ambient_player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0745F62A335FF5B2F2B943 /* Pods_ambient_player.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		163EC60C212FD4670068B143 /* ambient-player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ambient-player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		163EC60F212FD4670068B143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		163EC611212FD4670068B143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		163EC614212FD4670068B143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		163EC616212FD46D0068B143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163EC619212FD46D0068B143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163EC61B212FD46D0068B143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		163EC621212FD5B00068B143 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CF3D4B05536008BBA9CADB3A /* Pods-ambient-player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambient-player.release.xcconfig"; path = "Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player.release.xcconfig"; sourceTree = "<group>"; };
+		D93C8EB7FA95863B5AB3DD58 /* Pods-ambient-player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambient-player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player.debug.xcconfig"; sourceTree = "<group>"; };
+		DF0745F62A335FF5B2F2B943 /* Pods_ambient_player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ambient_player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CBD36682C8C20E621AF6D1 /* Pods_ambient_player.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				163EC60E212FD4670068B143 /* ambient-player */,
 				163EC60D212FD4670068B143 /* Products */,
+				6ADFE6DAAE7583953CBFDEA4 /* Pods */,
+				E3719B52B80826CDB58B49BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +63,29 @@
 			children = (
 				163EC60F212FD4670068B143 /* AppDelegate.swift */,
 				163EC611212FD4670068B143 /* ViewController.swift */,
-				163EC613212FD4670068B143 /* Main.storyboard */,
 				163EC616212FD46D0068B143 /* Assets.xcassets */,
 				163EC618212FD46D0068B143 /* LaunchScreen.storyboard */,
 				163EC61B212FD46D0068B143 /* Info.plist */,
+				163EC621212FD5B00068B143 /* UIColorExtension.swift */,
 			);
 			path = "ambient-player";
+			sourceTree = "<group>";
+		};
+		6ADFE6DAAE7583953CBFDEA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D93C8EB7FA95863B5AB3DD58 /* Pods-ambient-player.debug.xcconfig */,
+				CF3D4B05536008BBA9CADB3A /* Pods-ambient-player.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3719B52B80826CDB58B49BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0745F62A335FF5B2F2B943 /* Pods_ambient_player.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 163EC61E212FD46D0068B143 /* Build configuration list for PBXNativeTarget "ambient-player" */;
 			buildPhases = (
+				927A54ABF8E6C5633D1D55AC /* [CP] Check Pods Manifest.lock */,
 				163EC608212FD4670068B143 /* Sources */,
 				163EC609212FD4670068B143 /* Frameworks */,
 				163EC60A212FD4670068B143 /* Resources */,
+				C74DE7C0A2E11C22BC594AC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +150,49 @@
 			files = (
 				163EC61A212FD46D0068B143 /* LaunchScreen.storyboard in Resources */,
 				163EC617212FD46D0068B143 /* Assets.xcassets in Resources */,
-				163EC615212FD4670068B143 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		927A54ABF8E6C5633D1D55AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ambient-player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C74DE7C0A2E11C22BC594AC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		163EC608212FD4670068B143 /* Sources */ = {
@@ -137,20 +201,13 @@
 			files = (
 				163EC612212FD4670068B143 /* ViewController.swift in Sources */,
 				163EC610212FD4670068B143 /* AppDelegate.swift in Sources */,
+				163EC622212FD5B00068B143 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		163EC613212FD4670068B143 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				163EC614212FD4670068B143 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		163EC618212FD46D0068B143 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,15 +335,13 @@
 		};
 		163EC61F212FD46D0068B143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93C8EB7FA95863B5AB3DD58 /* Pods-ambient-player.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GS65HFAFH;
 				INFOPLIST_FILE = "ambient-player/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brudvik.ambient-player.ambient-player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +351,13 @@
 		};
 		163EC620212FD46D0068B143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3D4B05536008BBA9CADB3A /* Pods-ambient-player.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GS65HFAFH;
 				INFOPLIST_FILE = "ambient-player/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brudvik.ambient-player.ambient-player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
