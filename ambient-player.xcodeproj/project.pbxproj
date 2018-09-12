@@ -12,6 +12,8 @@
 		163EC617212FD46D0068B143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163EC616212FD46D0068B143 /* Assets.xcassets */; };
 		163EC61A212FD46D0068B143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163EC618212FD46D0068B143 /* LaunchScreen.storyboard */; };
 		163EC622212FD5B00068B143 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EC621212FD5B00068B143 /* UIColorExtension.swift */; };
+		163EC624212FE2260068B143 /* AmbientPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163EC623212FE2260068B143 /* AmbientPlayer.swift */; };
+		16475E722149B41700BD2516 /* brook.aac in Resources */ = {isa = PBXBuildFile; fileRef = 16475E712149B41700BD2516 /* brook.aac */; };
 		61CBD36682C8C20E621AF6D1 /* Pods_ambient_player.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0745F62A335FF5B2F2B943 /* Pods_ambient_player.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		163EC619212FD46D0068B143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163EC61B212FD46D0068B143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		163EC621212FD5B00068B143 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		163EC623212FE2260068B143 /* AmbientPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientPlayer.swift; sourceTree = "<group>"; };
+		16475E712149B41700BD2516 /* brook.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = brook.aac; sourceTree = "<group>"; };
 		CF3D4B05536008BBA9CADB3A /* Pods-ambient-player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambient-player.release.xcconfig"; path = "Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player.release.xcconfig"; sourceTree = "<group>"; };
 		D93C8EB7FA95863B5AB3DD58 /* Pods-ambient-player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ambient-player.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ambient-player/Pods-ambient-player.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0745F62A335FF5B2F2B943 /* Pods_ambient_player.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ambient_player.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +69,10 @@
 				163EC611212FD4670068B143 /* ViewController.swift */,
 				163EC616212FD46D0068B143 /* Assets.xcassets */,
 				163EC618212FD46D0068B143 /* LaunchScreen.storyboard */,
+				16475E712149B41700BD2516 /* brook.aac */,
 				163EC61B212FD46D0068B143 /* Info.plist */,
 				163EC621212FD5B00068B143 /* UIColorExtension.swift */,
+				163EC623212FE2260068B143 /* AmbientPlayer.swift */,
 			);
 			path = "ambient-player";
 			sourceTree = "<group>";
@@ -122,6 +128,11 @@
 				TargetAttributes = {
 					163EC60B212FD4670068B143 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,6 +161,7 @@
 			files = (
 				163EC61A212FD46D0068B143 /* LaunchScreen.storyboard in Resources */,
 				163EC617212FD46D0068B143 /* Assets.xcassets in Resources */,
+				16475E722149B41700BD2516 /* brook.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 				163EC612212FD4670068B143 /* ViewController.swift in Sources */,
 				163EC610212FD4670068B143 /* AppDelegate.swift in Sources */,
 				163EC622212FD5B00068B143 /* UIColorExtension.swift in Sources */,
+				163EC624212FE2260068B143 /* AmbientPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +354,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GS65HFAFH;
 				INFOPLIST_FILE = "ambient-player/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brudvik.ambient-player.ambient-player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -357,7 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GS65HFAFH;
 				INFOPLIST_FILE = "ambient-player/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brudvik.ambient-player.ambient-player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

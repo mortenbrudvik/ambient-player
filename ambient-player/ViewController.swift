@@ -16,6 +16,7 @@ enum TimerState {
 class ViewController: UIViewController {
 
     var timerState: TimerState = .notPlaying
+    var ambientPlayer: AmbientPlayer!
     
     var mainView: UIView = {
         let view = UIView()
@@ -36,6 +37,15 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let countDownLabel: UILabel = {
+        let label = UILabel()
+        label.text = "00:00"
+        label.textColor = .flatBlack
+        label.font = UIFont(name: "Courier",
+                            size: 54.0)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +60,9 @@ class ViewController: UIViewController {
             make.centerX.equalTo(self.mainView)
             make.bottom.equalTo(self.mainView.snp.bottom).offset(-110)
         }
+        
+        mainView.addSubview(countDownLabel)
+        
     }
     
     @objc func buttonAction(_ sender: UIButton) {
@@ -72,15 +85,20 @@ class ViewController: UIViewController {
     func startPlayer() {
         self.timerState = .playing
         startButton.setTitle("Pause", for: .normal)
+        
+        ambientPlayer = AmbientPlayer(minutes: 10, soundName: "brook")
+        ambientPlayer.play()
     }
     
     func pausePlayer() {
         self.timerState = .paused
+        ambientPlayer.pause()
         startButton.setTitle("Continue", for: .normal)
     }
     
     func unPausePlayer() {
         self.timerState = .playing
+        ambientPlayer.play()
         startButton.setTitle("Pause", for: .normal)
     }
     
